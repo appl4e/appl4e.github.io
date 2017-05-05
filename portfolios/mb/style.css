@@ -1,0 +1,864 @@
+/*-------------------------------------------------------------
+
+		Project	: MB Promotion
+		Tempalte URI : https://www.mbpromotion.com
+		Version	: 1.0
+		Author	: Coderweb
+		Author URI: https://apple.coderasia.com
+		Description: This is a custom template for This Website.
+
+
+---------------------------------------------------------------*/
+ 
+/*-------------------------------------------------------------
+		Table Of Contents 
+		--------------------
+		
+		1. Typography
+		2. Header Section
+			2.1. Menu
+		3. Cover Section
+		4. Project Section
+		5. Footer Section
+
+---------------------------------------------------------------*/
+/*-------------------------- 1. Typography --------------------------------*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+@font-face{
+	font-family: 'vinyl';
+	src: url('fonts/vinyl.eot');
+	src: url('fonts/vinyl.eor') format('embedded-opentype'),
+		url('fonts/vinyl.woff2') format('woff2'),
+		url('fonts/vinyl.woff') format('woff'),
+		url('fonts/vinyl.ttf') format('truetype'),
+		url('fonts/vinyl.svg#vinyl') format('svg');
+}
+@font-face{
+	font-family: 'pnsR';
+	src: url('fonts/pnsR.eot');
+	src: url('fonts/pnsR.eot') format('embedded-opentype'),
+		 url('fonts/pnsR.woff2') format('woff2'),
+		 url('fonts/pnsR.woff') format('woff'),
+		 url('fonts/pnsR.ttf') format('truetype'),
+		 url('fonts/pnsR.svg#pnsR') format('svg');
+}
+@font-face{
+	font-family: 'pnsS';
+	src: url('fonts/pnsS.eot');
+	src: url('fonts/pnsS.eot') format('embedded-opentype'),
+		 url('fonts/pnsS.woff2') format('woff2'),
+		 url('fonts/pnsS.woff') format('woff'),
+		 url('fonts/pnsS.ttf') format('truetype'),
+		 url('fonts/pnsS.svg#pnsR') format('svg');
+}
+@font-face{
+	font-family: 'pnsB';
+	src: url('fonts/pnsB.eot');
+	src: url('fonts/pnsB.eot') format('embedded-opentype'),
+		 url('fonts/pnsB.woff2') format('woff2'),
+		 url('fonts/pnsB.woff') format('woff'),
+		 url('fonts/pnsB.ttf') format('truetype'),
+		 url('fonts/pnsB.svg#pns-b') format('svg');
+}
+@font-face{
+	font-family: 'pnsM';
+	src: url('fonts/pnsM.eot');
+	src: url('fonts/pnsM.eot') format('embedded-opentype'),
+		 url('fonts/pnsM.woff2') format('woff2'),
+		 url('fonts/pnsM.woff') format('woff'),
+		 url('fonts/pnsM.ttf') format('ttf'),
+		 url('fonts/pnsM.svg#pnsM') format('svg');
+}
+
+a{
+	outline: 0;
+}
+p{
+	font-family: "pnsR", sans-serif;
+}
+/*-------------------------- 2. Header Section --------------------------------*/
+.no-gutter > [class*='col-']{
+	padding-right: 0;
+	padding-left: 0;
+}
+/*-------------------------- 2.1. Menu --------------------------------*/
+
+
+.navbar-custom .nav{
+	margin-top: 35px;
+}
+.navbar-custom .nav >li >a{
+	color: #0a204e;
+	outline: 0;
+	font-family: 'vinyl', sans-serif;
+	font-size: 17px;
+	font-weight: 500;
+	padding: 10px 8px;
+	border-bottom: 3.5px solid transparent;
+	
+}
+.navbar-header img{
+	display: none;
+}
+.navbar-custom .nav >li >a:hover{
+	background: #FFF;
+	color: #ce1d2d;
+	border-bottom: 3.5px solid #ce1d2d;		
+}
+.navbar-custom .nav >li.active >a{
+	color: #ce1d2d;
+}
+.navbar-custom .navbar-collapse{
+	padding:0;
+	background: #FFF;
+}
+.navbar{
+	margin-bottom: 35px;
+}
+.navbar-custom ul{
+	margin-left: 0;
+}
+.navbar-custom .navbar-toggle {
+    border: none;
+}
+.navbar-toggle{
+	position: relative;
+	float: right;
+	padding: 9px 0px;
+	margin-top: 8px;
+	margin-right: 0px;
+	margin-bottom: 8px;
+	background-color: transparent;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	left: 30px;
+	}
+.navbar-toggle.active{
+	margin-right: 30px;
+}
+.navbar-custom .navbar-toggle .icon-bar {
+    background-color: #FFF;
+}
+.navbar-custom .navbar-collapse{
+	background: rgba(255, 255, 255, 0);
+}
+.navbar-collapse.in {
+    overflow-y: inherit;
+}
+.navbar-toggle .icon-bar{
+	display: block;
+	width: 22px;
+	height: 2px;
+	border-radius: 1px;
+}
+.navbar-header .text-menu{
+	float: left;
+	overflow: hidden;
+	position: relative;
+	right: 60px;
+	bottom: -2px;
+	color: #FFF;
+	text-transform: uppercase;
+	font-size: 18px;
+	letter-spacing: 0.001px;
+	line-height: 1.1;
+}
+.navbar-toggle .icon-bar:nth-of-type(2){
+	margin-top: 4px;
+}
+.navbar-toggle .icon-bar:nth-of-type(3){
+	margin-top: 4px;
+}
+.navbar-toggle .icon-bar {
+	  position: relative;
+	  transition: all 500ms ease-in-out;
+	  -webkit-transition: all 500ms ease-in-out;
+	  -moz-transition: all 500ms ease-in-out;
+	  -ms-transition: all 500ms ease-in-out;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(2) {
+	  top: 6px;
+	  transform: rotate(45deg);
+	  -webkit-transform: rotate(45deg);
+	  -ms-transform: rotate(45deg);
+	  -moz-transform: rotate(45deg);
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(3) {
+	  background-color: transparent;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(4) {
+	  top: -6px;
+	  transform: rotate(-45deg);
+	  -webkit-transform: rotate(-45deg);
+	  -ms-transform: rotate(-45deg);
+	  -moz-transform: rotate(-45deg);
+}
+
+/*-------------------------- 3. Cover Section --------------------------------*/
+.cover-section .logo{
+	position: relative;
+}
+.cover-section .logo img{
+	width: 230px;
+	height: auto;
+	position: absolute;
+	top: -100px;
+	left: 40px;
+	z-index:1;
+}
+.cover-section{
+	position: relative;
+	padding: 20px 0;
+}
+#home .cover-section{
+	background: url('images/home-cover.jpg') no-repeat 0 0 / 100% 100%;
+}
+#premiums .cover-section{
+	background: url('images/premiums.jpg') no-repeat 0 0 / 100% 100%;
+}
+#gifts .cover-section{
+	background: url('images/merchandise-gifts.jpg') no-repeat 0 0 / 100% 100%;
+}
+#textiel .cover-section{
+	background: url('images/textiel.jpg') no-repeat 0 0 / 100% 100%;
+}
+#sport .cover-section{
+	background: url('images/sports.jpg') no-repeat 0 0 / 100% 100%;
+}
+#cases .cover-section{
+	background: url('images/cases.jpg') no-repeat 0 0 / 100% 100%;
+}
+#contact .cover-section{
+	background: url('images/contact.jpg') no-repeat 0 0 / 100% 100%;
+}
+.social-icons{
+	margin-right: 10px;
+}
+.social-icons a{
+	color: #FFFFFF;
+	border: 2px solid #FFFFFF;
+	border-radius: 50%;
+	width: 33px;
+	height: 33px;
+	display: inline-block;
+	text-align: center;
+	padding-top: 6px;
+}
+.social-icons a i{
+	font-size: 16px;
+}
+.social-icons a:hover{
+	color: #a72b35;
+	border: 2px solid #a72b35;
+}
+.cover-section .vertical-heading{
+	padding: 10px 17px;
+	background: #FFFFFF;
+	color: #122454;
+	display: inline-block;
+	-moz-transform: rotate(90deg);
+	transform: rotate(90deg);
+	position: absolute;
+	right: -103px;
+	top: 195px;
+	-moz-box-shadow: 5px 4px 4px #444;
+	box-shadow: 5px 4px 4px #444;
+}
+.cover-section .vertical-heading h3{
+	display: inline-block;
+	margin: 0;
+	font-family: 'vinyl', sans-serif;
+	font-size: 30px;
+}
+.cover-section .slogun{
+	margin-top: 250px;
+	margin-left: 25px;
+	overflow: hidden;
+}
+.cover-section .slogun h1{
+	color: #FFFFFF;
+	font-size: 40px;
+	font-weight: 700;
+	font-family: "vinyl", sans-serif;
+	line-height: 1.2em;
+}
+#gifts .cover-section .slogun h1,
+#sport .cover-section .slogun h1{
+	font-size: 90px;
+	margin-bottom: 0;
+}
+#gifts .cover-section .slogun,
+#sport .cover-section .slogun{
+	margin-top: 175px;
+}
+#gifts .cover-section .slogun h1{
+	font-size: 90px;
+	margin-bottom: 0;
+}
+#textiel .cover-section .slogun h1{
+	font-size: 58px;
+	margin-bottom: 0;
+	color: #122454;
+	font-weight: 400;
+}
+#textiel .cover-section .slogun{
+	margin-top: 175px;
+}
+#cases .cover-section .slogun{
+	margin-top: 0px;
+	margin-left: 210px;	
+}
+#cases .cover-section .slogun h1{
+	font-weight: 400;
+}
+/*-------------------------- 4. Project Section --------------------------------*/
+.projects{
+	position: relative;
+	height: auto;
+	box-sizing: border-box;
+	border: 1px solid #FFF;
+}
+.projects.item-1{
+	border-bottom: none;
+}
+#type-3.projects{
+	border-bottom: 0px;
+	border-right: 0px;
+}
+#type-3.projects:first-of-type{
+	border-top: 0px;
+}
+
+.img-responsive{
+	width: 100%;
+}
+.content-box{
+	font-family: "vinyl", sans-serif;
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;	
+	overflow: hidden;
+	display: none;
+	background: rgba(0, 0, 0, 0.9);
+	box-sizing: border-box;
+}
+.projects:hover .content-box,
+.latest-post:hover .content-box{
+	display: block;
+
+}
+.content-box h4{
+	margin-top: 38px;
+	color: #FFFFFF;
+	font-size: 18px;
+}
+.content-box .btn{
+	font-size: 12px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+}
+.content-box p{
+	color: #FFFFFF;
+	font-size: 1.2em;
+	line-height: 1.2em;
+	margin: 20px auto;
+	width: 95%;
+}
+#type-3.projects.content-box p{
+	width: 90%;
+}
+.projects .first-box{
+	background: rgba(255, 255, 255, 0.0);
+	padding: 15px;
+	box-sizing: border-box;
+	height: 95%;
+	display: block;
+}
+#type-2.projects{
+	border-left: 0px;
+	border-bottom: 0px;
+}
+.pink-header{
+	color: #ce1d2d;
+	font-family: "vinyl", sans-serif
+}
+.project-section .row-custom{
+	width: 100%;
+	overflow: hidden;
+	height: auto;
+}
+.projects .first-box h3{
+	color: #ce1d2d;
+	font-size: 32px;
+	margin-top: 5px;
+
+}
+.projects .first-box .btn{
+	display: block;
+	font-size: 36px;
+	font-family: "vinyl", sans-serif;
+}
+p#general-text{
+	color: #0a204e;
+	font-size: 16pt;
+	line-height: 22pt;
+	margin-bottom: 30px;
+}
+.projects .first-box p{
+	font-size: 1.2em;
+	margin: 12px 0;
+	line-height: inherit;
+}
+#type-4.projects{
+	border-bottom: 0px;
+}
+#type-4.projects .content-box h4{
+	margin-top: 120px;
+}
+#type-5.projects{
+		border-bottom: none;
+	}
+#type-6.projects{
+	border-right: none;
+	border-left: none;
+	border-bottom: none;
+}
+#type-6.projects .content-box h4{
+	margin-top: 20px;
+}
+#type-6.projects .content-box p{
+	margin: 10px auto;
+}
+
+.btn-square{
+	border-radius: 0;
+}
+.btn-pink{
+	background: #ce1d2d;
+	color: white;
+	border: 1px solid transparent;
+	transition: 0.6s;
+}
+.btn-pink:hover{
+	color: #ce1d2d;
+	background: #FFFFFF;
+	border: 1px solid #ce1d2d;
+}
+.project-section{
+	position: relative;
+	overflow: hidden;
+}
+.vector-icon{
+	position: absolute;
+	right: -22px;
+	top: 96%;
+	z-index: 1;
+	width: 40px;
+	height: 40px;
+}
+.col-cs-5{
+	width: 40%;
+	float: left;
+	overflow: hidden;
+	margin: 0;
+	height: auto;
+}
+#type-5.projects:first-of-type{
+	border-top: 0px;
+}
+.col-cs-2{
+	width: 20%;
+	float: left;
+	overflow: hidden;
+	margin: 0;
+}
+.col-cs-3{
+	width: 30%;
+	float: left;
+	overflow:hidden;
+	margin: 0;
+}
+.col-cs-9{
+	width: 70%;
+	float: left;
+	overflow: hidden;
+	margin: 0;
+}
+/*-------------------------- 5. Service Section --------------------------------*/
+.service-section h1{
+	font-size: 32pt;
+}
+.service-section p{
+	font-size: 16pt;
+	line-height: 22pt;
+}
+.service-section ul{
+	list-style: none;
+	margin-top: 30px;
+}
+.service-section ul li{
+	overflow: hidden;
+}
+.service-section ul li:before{
+	content: url('images/li-style.jpg');
+	float: left;
+	overflow: hidden;
+	margin-top: 6px;
+	margin-right: 40px;
+}
+.service-section ul li p{
+	margin-bottom: 0px;
+}
+/*-------------------------- 6. Highlighted Section --------------------------------*/
+.highlight-section{
+	background: #f0f0f0;
+}
+.highlight-section .container{
+	overflow: hidden;
+	padding: 30px 20px;
+}
+.highlight-section h3{
+	margin-top:0;
+	margin-bottom: 30px;
+	font-size: 24pt;
+}
+.highlight-section .general-text{
+	line-height: 1.2em;
+	margin-bottom: 10px;
+	font-size: 14pt;
+	line-height: 22pt;
+}
+.highlight-section p:first-of-type{
+	margin-bottom: 20px;	
+}
+.highlight-section p:last-of-type{
+	margin-bottom: 40px;
+}
+.highlight-section .btn{
+	display: block;
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	vertical-align: bottom;
+}
+/*-------------------------- 7. Latest Posts Section --------------------------------*/
+.latest-posts{
+	padding-top: 40px;
+}
+.latest-post{
+	padding: 0;
+	width: 23%;
+	margin-right: 1%;
+	margin-left: 1%;
+}
+.latest-post img{
+	width: 100%;
+}
+.latest-post .content-box{
+	width: 100%;
+}
+.latest-post .content-box p{
+	font-size: 12px;
+	line-height: 1em;
+	margin: 10px auto;
+	width: 96%;
+}
+.latest-post .content-box h4{
+	margin-top: 20px;
+}
+/*-------------------------- 8. Video Section --------------------------------*/
+.centered-column{
+	margin: auto !important;
+	display: block;
+	float: none;
+}
+#gifts .service-section{
+	margin-top: 30px;
+	background: #F0F0F0;
+
+}
+#gifts .service-section .container{
+	padding-bottom: 40px;
+}
+/*-------------------------- 9. Promo Section --------------------------------*/
+.promo-section .gallery .col-sm-3{
+	margin-bottom: 20px;
+}
+/*-------------------------- 10. Cases Section --------------------------------*/
+.cases .item-1{
+	position: relative;
+}
+.cases .item-1 .floating-logo{
+	position: absolute;
+	right: -60px;
+	top: 50%;
+	z-index: 1;
+}
+.rowx{
+	margin-left: 0;
+	margin-right: 0;
+	position: relative;
+}
+.product img{
+	box-sizing: border-box;
+	border: 1px solid #FFF;
+}
+.product .floating-logo{
+	border: none;
+}
+.product:hover .content-box{
+	display: block;
+
+}
+.product .content-box{
+	padding: 30px;
+}
+.product .content-box p{
+	margin-left: 0;
+}
+.content-box h3{
+	margin-top: 10px;
+	color: #FFFFFF;
+	font-size: 28px;
+}
+.cases .item-1, .cases .item-2, .cases .item-3{
+	border-bottom: 0px;
+}
+.cases .item-4, .cases .item-5{
+	border-right: 0px;
+	border-top: 0px;
+}
+.cases .item-6{
+	border: 0px;
+}
+.cases .item-7, .cases .item-8{
+	border: 0px;
+}
+.cases .item-8, .cases .item-9{
+	border: 0px;
+}
+/*-------------------------- 11. Slider Section --------------------------------*/
+.slider{
+	margin-top: 30px;
+	height: 600px;
+	position: relative;
+	background: url('images/slider-image.gif') no-repeat 0 0 / 100% 100%;
+	color: #FFF;
+}
+.slider p{
+	margin-bottom: 60px;
+	font-family: 'pnsR', sans-serif;
+}
+.slider h2{
+	font-family: 'vinyl', sans-serif;
+	margin-top: 60px;
+}
+.slider h3{
+	width: 80%;
+	text-align: center;
+	font-family: "vinyl",sans-serif;
+	position: absolute;
+	bottom: 75px;
+	left: 10%;
+}
+.customNavigation{
+	text-align: center;
+	position: relative;
+	bottom: 125px;
+}
+.customNavigation a:hover i{
+	color: #cd0d2d;
+}
+.customNavigation i{
+	color: #FFF;
+	font-size: 26px;
+}
+.customNavigation .next i{
+	position: absolute;
+	right: 20px;
+}
+.customNavigation .prev i{
+	position: absolute;
+	left: 20px;
+}
+/*-------------------------- 12. Contact Section --------------------------------*/
+.contact-section{
+	margin-top: 60px;
+}
+.contact-section .contact-info img{
+	position: static;
+	width: 40px;
+	height: 40px;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.contact-section .contact-info h3{
+	font-family: 'vinyl', sans-serif;
+	color: #122454;
+	vertical-align: middle;
+	margin-top: 8px;
+	margin-bottom: 30px;
+}
+.contact-section .contact-info p{
+	color: #072880;
+	font-size: 14px;
+}
+.contact-section .contact-info a{
+	font-size: 14px;
+}
+.contact-section .contact-info ul:first-of-type{
+	margin-bottom: 100px;
+}
+.contact-section .social-icons{
+	color: #d0112b;
+	margin-top: 60px;
+}
+.contact-section .social-icons a{
+	border: 2px solid #d0112b;
+	border-radius: 50%;
+	width: 33px;
+	height: 33px;
+	display: inline-block;
+	text-align: center;
+	padding-top: 7px;
+}
+.contact-section .social-icons ul li:hover a{
+	color: #122454;
+	border: 2px solid #122454;
+}
+.contact-section .social-icons h4{
+	font-family: 'vinyl', sans-serif;
+	color: #122454;
+}
+.contact-section .contact-form .form-group input[placeholder]{
+	color: #072880;
+	font-family: 'vinyl', sans-serif;
+	font-size: 20px;
+}
+.contact-section .contact-form .form-group input::-webkit-input-placeholder{
+	color: #072880;
+	font-family: 'vinyl', sans-serif;
+	font-size: 20px;
+}
+.contact-section .contact-form .form-group input::-moz-placeholder{
+	color: #072880;
+	font-family: 'vinyl', sans-serif;
+	font-size: 20px;
+
+}
+.contact-section .contact-form .form-group input:-moz-placeholder{
+	color: #072880;
+	font-family: 'vinyl', sans-serif;
+	font-size: 20px;
+}
+.contact-section .contact-form .form-group input:-ms-input-placeholder{
+	color: #072880;
+	font-family: 'vinyl', sans-serif;
+	font-size: 20px;
+}
+  input:focus::-webkit-input-placeholder {opacity: 0;}
+  input:focus::-moz-placeholder          {opacity: 0;}
+  input:focus:-moz-placeholder           {opacity: 0;}
+  input:focus:-ms-input-placeholder      {opacity: 0;}
+  textarea:focus::-webkit-input-placeholder {opacity: 0;}
+  textarea:focus::-moz-placeholder          {opacity: 0;}
+  textarea:focus:-moz-placeholder           {opacity: 0;}
+  textarea:focus:-ms-input-placeholder      {opacity: 0;}
+.contact-section .contact-form .form-group textarea[placeholder]{
+	color: #072880;
+	font-family: 'vinyl', sans-serif;
+	font-size: 20px;
+}
+.contact-section .contact-form .form-group textarea::-webkit-input-placeholder{
+	color: #072880;
+	font-family: 'vinyl', sans-serif;
+	font-size: 20px;
+}
+.contact-section .contact-form .form-group textarea::-moz-placeholder{
+	color: #072880;
+	font-family: 'vinyl', sans-serif;
+	font-size: 20px;
+}
+.contact-section .contact-form .form-group textarea:-moz-placeholder{
+	color: #072880;
+	font-family: 'vinyl', sans-serif;
+	font-size: 20px;
+}
+.contact-section .contact-form .form-group textarea:-ms-input-placeholder{
+	color: #072880;
+	font-family: 'vinyl', sans-serif;
+	font-size: 20px;
+}
+.contact-section .contact-form .form-group input[type=submit]{
+	width: 25%;
+	height: auto;
+	padding: 3px 10px;
+	font-size: 20px;
+	float: right;
+	color: #072880;
+	font-family: 'vinyl', sans-serif;
+	border: 1px solid #FFF;
+	box-shadow: 0px 0px 0px rgba(255, 255, 255, 0) inset;
+	margin-top: 20px;
+}
+.contact-section .contact-form .form-group input[type=submit]:hover{
+	border: 1px solid #CCC;
+	background: #DDD;
+}
+/*-------------------------- 13. Footer Section --------------------------------*/
+.footer-section{
+	overflow: hidden;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.footer-widgets{
+	background: #f0f0f0;
+	overflow: hidden;
+}
+.footer-widgets .footer-widget h5{
+	margin-top: 20px;
+	font-size: 18px;
+}
+.footer-widget ul{}
+.footer-widget ul li a{
+	text-decoration: none;
+	color: #0A204E;
+	font-family: "pnsR",sans-serif;
+	font-size: 13px;
+	line-height: 26px;
+}
+.footer-widget ul li:hover a{
+	color: #C82727;
+}
+.contact-info .col-sm-4{
+	vertical-align: middle;
+	overflow: hidden;
+	padding: 0;
+	margin-top: 60px;
+}
+.contact-info img{
+	width: 68px;
+	float: right;
+}
+.contact-info p{
+	font-size: 13px;
+	line-height: 1em;
+	margin: 4px auto;
+	color: #0a204e;
+	font-family: "pnsS", sans-serif;
+}
+.contact-info a{
+	text-decoration: none;
+	color: #C82727;
+	font-size: 11px;
+	font-family: "pnsS", sans-serif;
+}
+.contact-info div:last-child{
+	margin-top: 35px;
+	padding-left: 0;
+}

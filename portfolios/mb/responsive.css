@@ -1,0 +1,261 @@
+/************* For responsive *********/
+@media all and (max-width: 992px){
+	.social-icons .list-inline > li {
+	    display: inline-block;
+	    padding-right: 2px;
+	    padding-left: 2px;
+	}
+}
+@media all and (max-width: 820px){
+	.cover-section .logo img {
+	    width: 130px;
+	    height: 130px;
+	    left: 20px;
+	}
+}
+@media all and (max-width: 768px){
+	.menu{
+		width: 100%;
+		height: auto;
+		position: fixed;
+		top: 0px;
+		background: transparent;
+		z-index: 10;
+	}
+	.menu2{
+		background: rgba(255, 255, 255, 0.9);
+		padding-bottom: 40px;
+	}
+	.menu2 .navbar-header .location{
+		display: none !important;
+	}
+
+	.location{
+		overflow: hidden;
+		position: relative;
+		bottom: -18px;
+	}
+	.location ul li a{
+		color: #FFF;
+		font-size: 20px;
+		margin: auto 5px;
+	}
+	.location ul li:hover a{
+		color: #CE1D2D;
+	}
+	.navbar-custom ul{
+		text-align: center;
+	}
+	.navbar-header img{
+		width: 92px;
+		height: 85px;
+		position: fixed;
+		right: -30px;
+		top: -25px;
+		display: none;
+	}
+	.navbar-custom .nav >li >a:hover{
+		background: transparent;
+		color: #ce1d2d;
+		border-bottom: 3.5px solid transparent;		
+	}
+	.navbar-collapse .location{
+		position: static;
+		bottom: 10px;
+		display: block;
+		width: 100%;
+	}
+	.navbar-collapse .location ul li a{
+		color: #CE1D2D;
+		font-size: 26px;		
+	}
+	.cover-section .logo {
+	    position: relative;
+	    width: 100%;
+	}	
+	.cover-section .logo img {
+	    width: 98px;
+	    height: 98px;
+	    position: absolute;
+	    top: 150px;
+	    left: 42%;
+	    z-index: 1;
+	}
+	#cases .cover-section .logo img{
+		display: none;
+	}
+	#home .cover-section {
+	    background: transparent url("images/mobile-home.jpg") no-repeat 0px 0px / cover;
+	}
+	#premiums .cover-section {
+	    background: transparent url("images/premiums.jpg") no-repeat 0px 0px / auto 100%;
+	}
+	#premiums .cover-section .slogun h1{
+		color: #FFF;
+	}
+	#gifts .cover-section {
+		background-position: 15% 0;
+	    background-size: auto 100%;
+	}
+	#gifts .cover-section .slogun, #sport .cover-section .slogun {
+	    margin-top: 250px;
+	}
+	#gifts .cover-section .slogun h1 {
+	    font-size: 40px;
+	    color: #FFF;
+	}
+	#textiel .cover-section .slogun{
+		margin-top: 250px;
+	}
+	#textiel .cover-section .slogun h1{
+		font-size: 30px;
+		margin-bottom: 0px;
+		color: #FFFFFF;
+		font-weight: 400;
+	}
+	#textiel .gallery{
+		margin-top: 40px;
+	}
+	#cases .cover-section {
+	    background-size: auto 100%;
+	}
+	#cases .cover-section .slogun h1 {
+	    color: #FFF;
+	}
+	#cases .cover-section .slogun{
+		margin-top: 25px;
+	}
+	#textiel .cover-section{
+	    background: transparent url("images/textiel.jpg") no-repeat scroll -270px 0px / auto 100%;
+	}
+	#textiel .cover-section .slogun h1{
+		color: #0A204E;
+	}
+	#sport .cover-section .slogun h1{
+		font-size: 45px;
+	}
+	.product .content-box{
+		padding-top: 15px;
+	}
+	.product .content-box p{
+		width: 100%;
+	}
+	.slider h3 {
+	    margin-top: 100px;
+	}
+	.cover-section .slogun h1 {
+	    color: #0a204e;
+	    font-size: 26px;
+	    font-weight: 700;
+	    font-family: "vinyl",sans-serif;
+	    line-height: 1.2em;
+	}
+	.cover-section .slogun {
+	    margin-top: 360px;
+	}
+	.contact-section .contact-form .form-group input[type="submit"] {
+	    width: 50%;
+		margin: auto;
+		float: none;
+	}
+	.footer-section{
+		text-align: center;
+	}
+	.contact-info .col-sm-4{
+		margin-top: 30px;
+	}
+	.contact-info img{
+		position: static;
+		width: 68px;
+		height: 68px;
+		display: inline;
+		margin: auto;
+		margin-right: 12px;
+		float: none;
+	}
+	.contact-info div:last-child {
+	    margin-top: 0px;
+	}
+	.col-cs-5{
+		width: 100%;
+		float: left;
+		overflow: hidden;
+		margin: 0;
+		height: auto;
+	}
+	.col-cs-2{
+		width: 100%;
+		float: left;
+		overflow: hidden;
+		margin: 0;
+	}
+	.col-cs-3{
+		width: 100%;
+		float: left;
+		overflow:hidden;
+		margin: 0;
+	}
+	.col-cs-9{
+		width: 100%;
+		float: left;
+		overflow: hidden;
+		margin: 0;
+	}
+	.latest-post{
+		width: 48%;
+	}
+	.contact-form .odd{
+		margin-bottom: 20px;
+	}
+	.projects .first-box p {
+	    font-size: 0.9em;
+	    text-align: justify;
+	    margin: 8px 0px;
+	    line-height: inherit;
+	}
+	.projects .first-box .btn {
+	    display: block;
+	    font-size: 26px;
+	    font-family: "vinyl",sans-serif;
+	    padding: 4px 10px;
+	}
+	.projects .first-box h3 {
+	    font-size: 24px;
+	}
+	.content-box p{
+		font-size: 1em;
+		line-height: 1em;
+		margin: 15px auto;
+	}
+	#type-3 .content-box h4, 
+	#type-5 .content-box h4{
+		margin-top: 20px;
+		margin-bottom: 10px;
+
+	}
+
+	#type-4.projects .content-box h4 {
+	    margin-top: 50px;
+	}
+	.highlight-section .container {
+	    padding: 30px 25px;
+	}
+	.highlight-section .btn {
+	    padding-top: 10px;
+	    padding-bottom: 10px;
+	}
+	.latest-post .content-box .btn{
+		padding: 4px 12px;
+	}
+	.latest-post .content-box h4 {
+	    margin-top: 10px;
+	    margin-bottom: 10px;
+	}
+	.latest-post .content-box p {
+	    margin-top: 5px;
+	    margin-bottom: 5px;
+	}
+	.latest-post {
+	    margin-bottom: 10px;
+	}
+}

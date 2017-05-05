@@ -1,8 +1,4 @@
-/*
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+
 
 (function($) {
 
@@ -115,7 +111,7 @@
 				$window.on('load', function() {
 
 					$('#two').poptrox({
-						caption: function($a) { return $a.next('h3').text(); },
+						caption: function($a) { return $a.next('h3').html(); },
 						overlayColor: '#2c2c2c',
 						overlayOpacity: 0.85,
 						popupCloserText: '',

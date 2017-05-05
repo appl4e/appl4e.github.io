@@ -1,0 +1,971 @@
+/*-------------------------------------------------------------
+
+		Project	: Attention
+		Tempalte URI : https://www.atention.nl
+		Version	: 1.0
+		Author	: Coderweb
+		Author URI: https://apple.coderasia.com
+		Description: This is a custom template for This Website.
+
+
+---------------------------------------------------------------*/
+ 
+/*-------------------------------------------------------------
+		Table Of Contents
+		--------------------
+		
+		1. Typography
+		2. Header Area
+			2.1. Menu
+		3. Cover Area
+		4. Footer Area
+
+---------------------------------------------------------------*/
+
+/*-------------------------- 1. Typography --------------------------------*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic&subset=latin,latin-ext,greek-ext,greek);
+
+@font-face {
+    font-family: 'pgor';
+    src: url('fonts/PathwayGothicOneRegular.eot');
+    src: url('fonts/PathwayGothicOneRegular.eot') format('embedded-opentype'),
+         url('fonts/PathwayGothicOneRegular.woff2') format('woff2'),
+         url('fonts/PathwayGothicOneRegular.woff') format('woff'),
+         url('fonts/PathwayGothicOneRegular.ttf') format('truetype'),
+         url('fonts/PathwayGothicOneRegular.svg#PathwayGothicOneRegular') format('svg');
+}
+span.exclamation {
+	color: #A5CF51;
+	font-weight: bold;
+}
+
+/*-------------------------- 2. Header Area --------------------------------*/
+.center-col{
+	margin: auto;
+	float: none;
+	overflow: hidden;
+}
+.top-header{
+	width: 100%;
+	background: #2E3943;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	z-index: 9999;
+	
+}
+.logo-area{
+	width: 150px;
+	height: 40px;
+	overflow: hidden;
+	margin: 20px 0 10px 40px;
+}
+.contact-info{
+	padding-top: 26px;
+	font-family: 'Open Sans', sans-serif;
+	padding-right: 20px;
+}
+.contact-info a{
+	color: #B8B9BB;
+	font-size: 10px;
+}
+.contact-info a:hover{
+	color: #FFFFFF;
+}
+.contact-info i{
+	line-height: inherit;	
+	
+}
+
+/*-------------------------- 2.1. Menu --------------------------------*/
+
+.burger-menu{
+	padding-top: 25px;
+	background: #42464D;
+	overflow: hidden;
+	width: 126px;
+	font-family: 'pgor', sans-serif;
+	
+}
+.navbar{
+	margin-bottom: 0;
+}
+.navbar-header{
+	float: none;
+}
+.navbar-toggle{
+	display: inherit;
+	padding: 0;
+	margin: 0;
+}
+.navbar-toggle .icon-bar {background-color: #FFFFFF}
+.navbar-header .text-menu{
+	float: left;
+	overflow: hidden;
+	position: relative;
+	right: 55px;
+	bottom: 3px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-size: 18px;
+	letter-spacing: 0.001px;
+	line-height: 1.1;
+}
+
+.navbar-toggle .icon-bar:nth-of-type(3) {
+	  top: 1px;
+}
+
+.navbar-toggle .icon-bar:nth-of-type(4) {
+  	top: 2px;
+}
+
+.navbar-toggle .icon-bar {
+	  position: relative;
+	  transition: all 500ms ease-in-out;
+	  -webkit-transition: all 500ms ease-in-out;
+	  -moz-transition: all 500ms ease-in-out;
+	  -ms-transition: all 500ms ease-in-out;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(2) {
+	  top: 6px;
+	  transform: rotate(45deg);
+	  -webkit-transform: rotate(45deg);
+	  -ms-transform: rotate(45deg);
+	  -moz-transform: rotate(45deg);
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(3) {
+	  background-color: transparent;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(4) {
+	  top: -6px;
+	  transform: rotate(-45deg);
+	  -webkit-transform: rotate(-45deg);
+	  -ms-transform: rotate(-45deg);
+	  -moz-transform: rotate(-45deg);
+}
+
+.menu-row{
+	width: 100%;
+	position: fixed;
+	top: 75px;
+	left: 0;
+	z-index: 99;
+	background: rgba(65, 73, 82, 0.8);
+}
+.menu-row a{
+	font-family: 'pgor', sans-serif;
+	color: #FFFFFF;
+	letter-spacing: 0.5px;
+	font-size: 16px;
+}
+.menu-row a:hover, .menu-row .active{
+	background: none !important;
+	color: #a5cf51;
+}
+.navbar-right{
+	margin-right: 0px;
+}
+.navbar-nav > li > a{
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+.navbar-collapse.collapse{
+	display: none;
+}
+.collapse.in{
+	display: block;
+}
+.settings-button{
+	width: 0;
+	height: 0;
+	position: fixed;
+	top: 75px;
+	z-index: 999;
+	border-left: 0px solid #96D157;
+	border-right: 44px solid transparent;
+	border-top: 44px solid #96D157;
+}
+.settings-button a{
+	text-decoration: none;
+	color: #FFFFFF;
+	display: block;
+	padding: 7px 18px 0px 14px;
+	margin-top: -47px;
+	margin-left: -7px;
+}
+/*-------------------------- 3. Cover Area --------------------------------*/
+
+.top-sections{
+	background: url(images/home-cover1.jpg) no-repeat 0 0 / cover; 
+}
+.cover-section{
+	overflow: hidden;
+}
+.cover-section h2{
+	color: #FFFFFF;
+	margin-top: 600px;
+	margin-bottom: 150px;
+	font-family: 'pgor', sans-serif;
+	font-size: 50px;
+	text-shadow: 1px 3px 2px #444444;
+}
+/*-------------------------- 4. Features Area --------------------------------*/
+
+.features{
+	background: linear-gradient(to right, #7D9E39,#A6CF4F,#A6CF4F,#A6CF4F,#7D9E39);
+	padding: 8px;
+	color: #FFFFFF;
+	font-family: 'pgor', sans-serif;
+}
+.features a{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+.features h3{
+	font-size: 40px;
+	margin-top: 50px;
+}
+.features h5{
+	font-size: 20px;
+	margin-bottom: 50px;
+}
+.features .feature-col:nth-of-type(2){
+	border-right: 1px solid #FFFFFF;
+	border-left: 1px solid #FFFFFF;
+}
+/*-------------------------- 5. Info Graphics Area --------------------------------*/
+
+.info-graph-sect{
+	padding: 40px 0;
+}
+.info-graph-sect img:nth-of-type(1){
+	width: 19%;
+	margin-top: 60px;
+}
+.info-graph-sect img:nth-of-type(2){
+	width: 4.5%;
+	margin-left: 5px;
+	margin-top: 5px;
+}
+.info-graph-sect img:nth-of-type(3){
+	width: 5%;
+	margin-top: 35px;
+}
+.info-graph-sect img:nth-of-type(4){
+	width: 4%;
+	margin-top: 80px;
+}
+.info-graph-sect img:nth-of-type(5){
+	width: 8%;
+	margin-top: 35px;
+}
+.info-graph-sect img:nth-of-type(5){
+	width: 6%;	
+}
+.info-graph-sect img:nth-of-type(6){
+	width: 7%;
+	position: relative;
+	top: -25px;
+}
+.info-graph-sect img:nth-of-type(7){
+	width: 9%;
+}
+.info-graph-sect img:nth-of-type(8){
+	width: 8%;
+	margin-top: 80px;
+}
+.info-graph-sect img:nth-of-type(9){
+	width: 7%;
+}
+.info-graph-sect img:nth-of-type(10){
+	width: 6%;
+	position: relative;
+    top: -35px;
+}
+
+.info-graph-sect img:nth-of-type(11){
+	width: 18%;
+}
+/*-------------------------- 6. Brasserie Area --------------------------------*/
+
+.brasserie{
+	padding: 50px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/brasserie-bg.png);
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+.brasserie-text{
+	color: #FFFFFF;
+}
+.brasserie-text h3{
+	font-family: 'pgor', sans-serif;
+	font-size: 30px;
+	margin-top: 0;
+	line-height: 0.7;
+}
+.brasserie-text p{
+	font-size: 12px;
+	line-height: 2;
+	font-family: 'Open Sans', sans-serif;
+}
+.btn-lime{
+	text-decoration: none;
+	color: #FFFFFF;
+	display: inline-block;
+	background: #96D157;
+	border: 1px solid #95c03f;
+	font-weight: bold;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	box-sizing: border-box;
+}
+.btn-lime:hover{
+	text-decoration: none;
+	color: #FFFFFF;
+	background: #83B44C;
+}
+.brasserie-text a{
+	float: right;
+	padding: 10px 40px;
+}	
+.brasserie-text a:hover{
+	background: #83B44C;
+	border: 1px solid #95c03f;
+}
+/*-------------------------- 7. Media Section --------------------------------*/
+.media-sect{
+	background: #F9F9F9;
+	padding: 50px 0;
+}
+.media-sect h4{
+	margin-bottom: 20px;
+}
+.media-sect p{
+	font-size: 12px;
+	line-height: 2;
+	margin-bottom: 0px;
+	font-family: 'Open Sans', sans-serif;
+}
+.media-sect img{
+	margin-left: 20px;
+	margin-top: 10px;
+}
+/*-------------------------- 7. Services Section --------------------------------*/
+.services{
+	padding: 40px 0;
+}
+.services .service{
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+.services .service h5{
+	font-family: "Open Sans",sans-serif;
+	font-weight: 600;
+	margin-top: 0px;
+	font-size: 17px;
+	line-height: 1;
+	color: #000;
+	margin-bottom: 20px;
+}
+.services .service p{
+	font-size: 12px;
+	line-height: 2;
+	margin-bottom: 0px;
+	font-family: 'Open Sans', sans-serif;
+}
+.services .service .service-img{
+	padding: 0;
+	vertical-align: middle;
+}
+.service-img img{
+}
+
+/*-------------------------- 8. Employees Section --------------------------------*/
+section{
+	padding: 40px 0;
+}
+.employees{
+	background: #F9F9F9;
+	position: relative;
+}
+.employees .employee{
+	overflow: hidden;
+	vertical-align: baseline;
+	height: 100%;
+}
+.employees .center-col{
+	overflow: hidden;
+	border: 0.5px solid #EEEEEE;
+	padding: 10px;
+}
+.employees .employee img{
+	width: 100%;
+}
+.employees .employee:nth-of-type(1){
+	padding-left: 0px;
+}
+.employees .employee:nth-of-type(2){
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.employees .employee:nth-of-type(3){
+	padding-right: 0px;
+}
+.employees .employee h6{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 15px;
+}
+.employees .employee p{
+	font-size: 12px;
+	line-height: 2;
+	margin-bottom: 0px;
+	font-family: 'Open Sans', sans-serif;
+}
+.employees .employee a{
+	display: block;
+	margin-top: 20px;
+	text-align: center;
+	padding: 10px;
+	vertical-align: baseline;
+}
+
+/*-------------------------- 9. Twitter Post -------------------------------*/
+.twitter-post{
+	background: url(images/twitter-bg.png) no-repeat 0 0/ cover;
+}
+.twitter-post .post{
+	background: #FFFFFF;
+	padding: 10px;
+	overflow: hidden;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+.twitter-post .post .post-img{
+	padding: 0px;
+}
+.twitter-post .post .post-text h6{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 15px;
+	margin-bottom: 15px;
+}
+.twitter-post .post .post-text p{
+	font-size: 12px;
+	line-height: 2;
+	margin-bottom: 0px;
+	font-family: 'Open Sans', sans-serif;
+}
+.twitter-post .post .post-text .tags{
+	margin-top: 20px;
+	font-weight: normal;
+	font-size: 12px;
+	display: inline-block;
+	
+}
+/*-------------------------- 10. Over Attention page cover Section -------------------------------*/
+.page-2-top{
+	background: url(images/page2-cover-bg.png) no-repeat bottom / 100% 80%; 
+}
+.cover-border{
+	width: 100%;
+	height: 8px;
+	background: linear-gradient(to right, #7D9E39,#A6CF4F,#A6CF4F,#7D9E39);
+	overflow: hidden;
+}
+.over-cover{
+	overflow: hidden;
+}
+.over-cover h2{
+	color: #FFFFFF;
+	margin-top: 130px;
+	margin-bottom: 5px;
+	font-family: 'pgor', sans-serif;
+	font-size: 45px;
+	text-shadow: 1px 3px 2px #444444;
+}
+.over-cover h1{
+	color: #FFFFFF;
+	margin-top: 0px;
+	margin-bottom: 40px;
+	font-family: 'pgor', sans-serif;
+	font-size: 38px;
+	text-shadow: 1px 3px 6px #777777;
+}
+/*-------------------------- 11. Over Attention page Employee Section -------------------------------*/
+#over-page .employees{
+	background: #F9F9F9;
+	width: 100%;
+	background: url(images/cover-2.jpg) no-repeat 0 0 / 120% 350px;
+	padding-top: 200px;
+}
+#over-page .employees .center-col{
+	margin: 10px auto;
+}
+
+#over-page .employees .center-col{
+	background: #FFFFFF;
+}
+/*-------------------------- 12. Webshop, Applicaties page Cover Section -------------------------------*/
+#webshop-page .top-sections{
+	background: url(images/webshops-bg.jpg) no-repeat 0 0 / 100% 100%; 
+}
+#webshop-page .cover-section h2, #applicaties .cover-section h2, #hosting .cover-section h2{
+	margin-top: 450px;
+	margin-bottom: 10px;
+	font-family: 'pgor', sans-serif;
+	font-size: 50px;
+	text-shadow: 1px 3px 2px #444444;
+}
+#webshop-page .cover-section h1, #applicaties .cover-section h1, #hosting .cover-section h1{
+	color: #FFFFFF;
+	margin-top: 0px;
+	margin-bottom: 100px;
+	font-family: 'pgor', sans-serif;
+	font-size: 38px;
+	text-shadow: 1px 3px 6px #777777;
+}
+
+/*-------------------------- 13. Webshop, Applicaties page Overview Section -------------------------------*/
+.overview{
+	overflow: hidden;
+}
+section p{
+	font-size: 12px;
+	line-height: 2;
+	margin-bottom: 0px;
+	font-family: 'Open Sans', sans-serif;
+}
+/*-------------------------- 14. Webshop, Applicaties page Supports Section -------------------------------*/
+
+.supports{
+	padding: 160px 0;
+	background: transparent url("images/webshop-2-bg.jpg") repeat scroll -40px -130px / 112% 140%;
+}
+#hosting .supports{
+	background: transparent url("images/hosting-bg-2.jpg") repeat scroll -40px -130px / 112% 140%;
+}
+.supports .center-col{
+	padding: 20px 40px;
+	background: rgba(255,255,255,0.9);
+}
+.supports .center-col div{
+	padding: 10px 5px;
+}
+/*-------------------------- 15. Webshop, Applicaties page Pre Contact Section -------------------------------*/
+.pre-contacts{
+	background: #F9F9F9;
+}
+
+.pre-contacts h4{
+	margin: 20px 0 40px;
+}
+/*-------------------------- 16. Webshop, Applicaties page Contact Form Section -------------------------------*/
+.contact-form{
+	padding: 60px 0;
+}
+.contact-form .control-label{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	font-size: 18px;
+	text-align: left;
+}
+.contact-form input.form-control{
+	border-radius: 0px;
+	font-size: 20px;
+	height: 48px;
+}
+.contact-form textarea.form-control{
+	border-radius: 0px;
+}
+.contact-form input.form-control[type="submit"]{
+	background: #9FC25B;
+	color: #FFFFFF;
+	height: 60px;
+}
+/*-------------------------- 17. Applicaties page Cover Section -------------------------------*/
+#applicaties .top-sections{
+	background: url(images/applications-bg.jpg) no-repeat 0 0 / 100% 100%; 
+}
+/*-------------------------- 18. Webhosting page Cover Section -------------------------------*/
+#hosting .top-sections{
+	background: url(images/hosting-bg.jpg) no-repeat 0 0 / 100% 100%;
+}
+/*-------------------------- 19. Portfolio page -------------------------------*/
+#portfolio .portfolio{
+	padding-top: 75px;
+	padding-bottom: 30px;
+}
+#portfolio .portfolio .portfolio-item{
+	position: relative;
+	overflow: hidden;
+}
+#portfolio .portfolio .portfolio-item img{
+	width: 100%;
+	height: auto;
+}
+#portfolio .portfolio .portfolio-item ul{
+	margin: 0;
+	padding: 0;
+}
+#portfolio .portfolio .portfolio-item .item-text{
+	position: absolute;
+	bottom: 0;
+	display: none;
+	z-index: 9;
+}
+.overlay{
+	position: absolute;
+	bottom:0;
+	z-index: 1;
+	background: rgba(0,0,0,0.7);
+	width:100%;
+	height:100%;
+	display: none;
+}
+#portfolio .portfolio .portfolio-item:hover .overlay{
+	display: block;
+}
+#portfolio .portfolio .portfolio-item .item-text{
+	background: rgba(46,57,67,0.85);
+	overflow: hidden;
+	padding: 10px 10px;
+}
+#portfolio .portfolio .portfolio-item .item-text p{
+	line-height: 1.5;
+	font-family: 'Open Sans', sans-serif;
+	color: #FFFFFF;
+}
+#portfolio .portfolio .portfolio-item .item-text h6{
+	font-family: 'pgor', sans-serif;
+	font-size: 20px;
+	color: #FFFFFF;
+	margin-top: 5px;
+	
+}
+#portfolio .portfolio .portfolio-item a{
+	text-decoration: none;
+	display: block;
+	overflow: hidden;
+}
+.no-gutter > [class*='col-']{
+	padding-right: 0;
+	padding-left: 0;
+}
+#portfolio .add-more{
+	margin: auto;
+	text-align: center;
+	margin-bottom:30px;
+}
+#portfolio .add-more a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	
+}
+/*-------------------------- 20. Single Portfolio page -------------------------------*/
+.item{
+	overflow: hidden;
+	padding-top: 150px;
+}
+.single-portfolio1{
+	background: url(images/single-portfolio-bg.jpg) no-repeat 0 0/ 100% 100%;
+}
+.single-portfolio2{
+	background: url(images/webshop-2-bg.jpg) no-repeat 0 0/ 100% 100%;
+}
+
+.item-details{
+	overflow: hidden;
+	background: rgba(65, 73, 82, 0.8);
+}
+.item-details h6{
+	font-family: 'pgor', sans-serif;
+	font-size: 20px;
+	color: #FFFFFF;
+} 
+.item-details p{
+	font-family: 'Open Sans', sans-serif;
+	color: #FFFFFF;
+	margin-bottom: 20px;
+}
+.item-buttons{
+	padding: 0;
+	margin-top: 30px;
+	margin-bottom: 100px;
+}
+.item-buttons div{
+	padding: 0;
+}
+.item-buttons a{
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 15px;
+	font-weight: bold;
+	display: block;
+	padding: 15px 20px;
+	background: rgba(150, 209, 87, 0.9);
+	text-align: center;
+	box-sizing: border-box;
+	border: 1px solid #b5c5ae;
+}
+.item-buttons a:hover{
+	background: rgba(117, 182, 48, 0.9);
+}
+.item-buttons div:nth-of-type(1) a{
+	padding: 12px 20px;
+}
+.item-buttons a i{
+	font-size: 25px;
+	font-weight: bold;
+}
+.customNavigation .prev{
+	float: left;
+	overflow: hidden;
+	margin-right: 25px;
+}
+.customNavigation i{
+	font-size: 40px;
+	font-weight: bold;
+	color: rgba(103, 101, 101, 0.7);
+}
+.customNavigation a:hover i{
+	color: #565656;
+}
+.customNavigation{
+	width: 60px;
+	position: absolute;
+	right: 2%;
+	bottom: 36px;
+}
+/*-------------------------- 20. Single Portfolio page -------------------------------*/
+section.contact{
+	padding: 300px 0;
+	background: url(images/webshop-2-bg.jpg) no-repeat 0 0 / 100% 100%;
+	
+}
+.adrs-box{
+	overflow: hidden;
+	margin-top: 60px;
+	background: rgba(255,255,255,0.91);
+}
+
+.adrs-box .row{
+	margin: 5px 10px 20px 15px;
+}
+.adrs-box .row:first-of-type{
+	margin-bottom: 5px;
+}
+.adrs-box .row:last-of-type{
+	margin-bottom: 89px;
+}
+.contact .contact-form input, .contact .contact-form textarea{
+	background: rgba(255, 255, 255, 0.91);
+}
+.contact .contact-form input[type='submit']{
+	background: rgba(159, 194, 91, 0.85);
+}
+.contact .contact-form input[palceholder]{
+	color: #000;
+	font-family: 'Open Sans', sans-serif;
+}
+/*-------------------------- Footer Area --------------------------------*/
+
+.footer-section {
+	background: #2E3943;
+	overflow: hidden;	
+	padding: 10px 5px;
+}
+
+.footer-section .contact-info{
+	margin-left: 20px;
+	padding-top: 32px;
+}
+
+.footer-section .social-links{
+	padding-top: 20px;
+	margin-right: 20px;
+	overflow: hidden;
+}
+.footer-section .social-links a{
+	color: #FFFFFF;
+	display: block;
+	width: 40px;
+	height: 40px;
+	border: 1px solid transparent;
+	border-radius: 50%;
+	text-align: center;	
+}
+.footer-section .social-links ul li:hover a{
+	background: #9CC24F;
+}
+.footer-section .social-links i{
+	margin-top: 9px;
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 1;
+}
+.footer-section .social-links .facebook{
+	background: #32629A;
+}
+.footer-section .social-links .twitter{
+	background: #18BFF0;
+}
+.footer-section .social-links .google{
+	background: #D72027;
+}
+
+/*--------------------- Making It responsive for small screen devices ------------------------*/
+@media all and (max-width: 930px){
+	#contact-page .contact .center-col{
+		padding: 0 !important;
+	}
+	#contact-page .contact .center-col .col-sm-4{
+		padding-left: 0;
+	}
+	.adrs-box .row:last-of-type {
+		margin-bottom: 72px;
+	}
+}
+
+@media all and (max-width: 767px){
+	.top-sections{
+		background: transparent url("images/home-cover1.jpg") no-repeat scroll 0px 0px / 100% 100%;
+	}	
+	.cover-section h2{
+		margin-top: 300px;
+		margin-bottom: 50px;
+		font-size: 25px;
+	}
+	.features{
+		display: none;
+	}
+	.info-graph-sect{
+		display: none;
+	}
+	.brasserie-text{
+		margin-top: 30px;
+	}
+	.settings-button{
+		display: none;
+	}
+	.top-header .contact-info ul li:first-child{
+		display: none;
+	}
+	.top-header .contact-info ul li:nth-child(2) p, .top-header .contact-info ul li:nth-child(3) p{
+		display: none;
+	}
+	.top-header .contact-info ul li:nth-child(2) i, .top-header .contact-info ul li:nth-child(3) i{
+		font-size: 24px;
+	}
+	.top-header .contact-info ul li{
+		margin-right: 10px;
+	}
+	.top-header .contact-info ul{
+		margin-top: -5px;
+	}
+	.top-header .contact-info{
+		padding-right: 15px;
+	}
+	.employees .employee{
+		padding-left: 5px !important;
+		padding-right: 5px !important;
+		margin-bottom: 15px;
+	}
+	section {
+		padding: 9px 0px;
+	}
+	.over-cover h2{
+		font-size: 36px;
+	}
+	.over-cover h1{
+		font-size: 30px;
+	}
+	.footer-section .contact-info, .footer-section .social-links{
+		float: none !important;
+		margin: auto;
+		text-align: center;
+	}
+	#webshop-page .cover-section h2, #applicaties .cover-section h2, #hosting .cover-section h2{
+		margin-top: 340px;
+		font-size: 32px;
+	}
+	#webshop-page .cover-section h1, #applicaties .cover-section h1, #hosting .cover-section h1 {
+		margin-bottom: 50px;
+		font-size: 22px;
+	}
+	section.contact{
+		padding: 65px 0px 0px;
+		background: url(images/mobile-contact.jpg) no-repeat -820px 0 / cover;
+	}
+	.contact-form{
+		padding: 60px 0 30px;
+	}
+	.contact-form input, .contact-form textarea{
+		margin-bottom: 10px;
+	}
+	.form-group{
+		margin-bottom: 0;
+	}
+	.bel-button{
+		background: #88BE4F !important;
+	}
+	.bel-button:hover{
+		background: #A5CF51 !important;
+	}
+	.bel-button a{
+		text-decoration: none;
+		color: #FFFFFF;
+		text-align: center;
+		font-weight: bold;
+		font-size: 25px;
+		display: block;
+	}
+	.supports{
+		padding: 50px 0;
+	}
+	
+}
+@media all and (max-width: 480px){
+	.logo-area {
+		width: 130px;
+		margin: 20px 0px 10px 10px;
+	}
+	.burger-menu{
+		width: 106px;
+	}
+	.top-header .contact-info {
+		padding-right: 0px;
+	}
+	.top-header .contact-info ul li:nth-child(2) i, .top-header .contact-info ul li:nth-child(3) i{
+		font-size: 20px;
+	}
+	.cover-section h2 {
+		font-size: 18px;
+	}
+	.brasserie {
+		padding: 50px 0;
+		background: url("images/brasserie-bg.png") no-repeat 0 0 / 100% 100%;
+	}
+	.over-cover h2{
+		font-size: 26px;
+	}
+	.over-cover h1{
+		font-size: 22px;
+	}
+	.top-header .contact-info ul li {
+		margin-right: 5px;
+	}
+	#webshop-page .cover-section h2, #applicaties .cover-section h2, #hosting .cover-section h2{
+		font-size: 22px;
+	}
+	#webshop-page .cover-section h1, #applicaties .cover-section h1, #hosting .cover-section h1 {
+		font-size: 18px;
+	}
+}
