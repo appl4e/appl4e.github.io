@@ -1,0 +1,82 @@
+
+/* Typography */
+@font-face {
+    font-family: 'ForumRegular';
+    src: url('../fonts/ForumRegular.eot');
+    src: url('../fonts/ForumRegular.eot') format('embedded-opentype'),
+         url('../fonts/ForumRegular.woff2') format('woff2'),
+         url('../fonts/ForumRegular.woff') format('woff'),
+         url('../fonts/ForumRegular.ttf') format('truetype'),
+         url('../fonts/ForumRegular.svg#ForumRegular') format('svg');
+}
+
+body{
+    font-family: 'ForumRegular', serif;
+}
+h1, h4{
+    margin-bottom: 0px;
+}
+.text-primary {
+	color: #D1AC74 !important;
+}
+
+/* Overriding bootstrap class properties */
+.bg-light{
+    background-color: #E9E9E9 !important;
+}
+
+/* Header */
+.navbar-light .navbar-nav .nav-link{
+    color: #7e7e7e;
+}
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+	color: #D1AC74;
+}
+.nav-link {
+	display: block;
+	padding: 0px 15px;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding-right: 15px;
+    padding-left: 15px;
+    line-height: 1.3;
+    text-transform: uppercase;
+}
+.navbar-expand-lg .navbar-nav .nav-item{
+    border-right: 2px solid #A5A5A5;
+}
+.navbar-expand-lg .navbar-nav .nav-item:last-child{
+    border-right: 0px;
+}
+
+/* Home slider */
+.home-slider .slider-bg{
+    height: 550px;
+    background: url('../images/nicescenebk.jpg') 0 0 / cover;
+
+}
+.home-slider .slider-bg .slider-text{
+    height: 550px;
+    padding-bottom: 20px;
+}
+
+/* Section Title */
+.section-title{
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+.quote-left img, .quote-right img{
+    vertical-align: top;
+}
+
+.section-icon{
+    margin-top: -32px;
+}
+
+/* Footer */
+.border-right {
+	border-right: 2px solid #dee2e6 !important;
+}
+.border-primary {
+	border-color: #D1AC74 !important;
+}
